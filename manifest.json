@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-hr-onboarding",
-  "version": "1.0.0",
-  "description": "HR Onboarding & Offboarding Agent — Okta/OneLogin/Rippling integration for employee lifecycle automation across SaaS tools",
+  "version": "1.0.1",
+  "description": "HR Onboarding & Offboarding Agent \u2014 Okta/OneLogin/Rippling integration for employee lifecycle automation across SaaS tools",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-hr-onboarding",
   "homepage": "https://cortexprism.io/marketplace/plugins/hr-onboarding",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "hr_onboard_employee",
@@ -21,7 +24,11 @@
       "description": "Revoke access and archive data",
       "params": []
     },
-    { "name": "hr_onboarding_status", "description": "Check onboarding progress", "params": [] },
+    {
+      "name": "hr_onboarding_status",
+      "description": "Check onboarding progress",
+      "params": []
+    },
     {
       "name": "hr_generate_checklist",
       "description": "Generate onboarding checklist",
@@ -29,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
